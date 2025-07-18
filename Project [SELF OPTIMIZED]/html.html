@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Convertor & Gold Price</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Currency Convertor & Gold Price</h1>
+    </header>
+    <main>
+        <section id="currency-converter">
+            <h2>Currency Converter</h2>
+            <input type="number" id="amount" placeholder="Amount">
+            <select id="from-currency"></select>
+            <select id="to-currency"></select>
+            <button onclick="convertCurrency()">Convert</button>
+            <p id="conversion-result"></p>
+        </section>
+       
+        <section id="gold-prices">
+            <h2>Gold Price in India</h2>
+            <button onclick="fetchGoldPrice()">Get Gold Price</button>
+            <p id="gold-price"></p>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
